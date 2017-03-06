@@ -18,9 +18,9 @@
      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </blockquote>
   <h3>Temas</h3>
-  <br align="center">
-    <input class="boton" type="submit" id="boton1" name= "b1" value="Sprint1">
-    <input class="boton" type="submit" id="boton2" name= "b2" value="Sprint2">
+  <br>
+    <input class="boton" type="submit" id="boton1" name= "b1" value="Sprint1" onclick="mostarOcultar('text1')">
+    <input class="boton" type="submit" id="boton2" name= "b2" value="Sprint2" onclick="mostarOcultar('text2')">
     <input class="boton" type="submit" id="boton3" name= "b3" value="Sprint3">
     <div class="dropdown">Hola coder Maria
 	<button onclick="myFunction();return false" class="dropbtn">&#9776;</button>
@@ -29,10 +29,73 @@
 		<a href="#l">Salir</a>
 	</div>
 </div>
-
-  <script src="asssets/js/main.js"type="text/javascript">
-
-  </script>
-
+<div id="text1" style="display:none;">
+  <form action="">
+    <h2>Sprint1 : Introducción a JavaScript</h2>
+				<ol>
+          <li>Fundamentos de programación</li>
+          <li>Funciones</li>
+          <li>Arreglos</li>
+          <li>Objetos</li>
+        </ol>
+        <hr>
+    <h3>Quiz</h3>
+    <div>
+      <h4>Existen dos tipos de funciones</h4>
+        <input type="radio" name="opcion" value="o1" required="">Expresadas y declaradas<br>
+        <input type="radio" name="opcion" value="o2" required="">Explícitas y declaradas<br>
+        <input type="radio" name="opcion" value="o3" required="">Expresadas y derivadas<br><br>
+    </div>
+    <div>
+      <h4>Elije una propiedad de los arreglos</h4>
+        <input type="radio" name="opcion" value="o4" required="">clear<br>
+        <input type="radio" name="opcion" value="o5" required="">pop<br>
+        <input type="radio" name="opcion" value="o6" required="">add<br><br>
+    </div>
+    <div>
+      <h4>Un objeto tiene_____y______</h4>
+        <input type="radio" name="opcion" value="o7" required="">números y letras<br>
+        <input type="radio" name="opcion" value="o8" required="">partes y validaciones<br>
+        <input type="radio" name="opcion" value="o9" required="">propiedades y valores<br><br>
+        <input type="submit" onclick="mostrarResultados();return false">
+    </div>
+        </form>
+    </div>
+  <div id="text2" style="display:none;">
+  <form action="">
+    <h2>Sprint 2 : Introducción al desarrollo web y construcción de páginas</h2>
+				<ol>
+          <li>Ciclo de vida del desarrollo web y arquitectura básica cliente/servidor/Configuración del ambiente de trabajo e introducción al git</li>
+          <li>HTML y JavaScript en el navegador</li>
+          <li>Manejos de comandos básicos de git en la terminal</li>
+          <li>Pruebas Unitarias</li>
+          <li>Git/Resolución de conflictos/Branching model</li>
+          <li>Dom</li>
+        </ol>
+        <hr>
+        <h3>Quiz</h3>
+        <div>
+    <h4>¿Cuál es el comando para iniciar un repositorio desde la consola?</h4>
+      <input type="radio" name="opcion" value="o10" required=""> git init .<br>
+      <input type="radio" name="opcion" value="o11" required=""> git init<br>
+      <input type="radio" name="opcion" value="o12" required=""> git init add<br><br>
+      </div>
+      <div>
+    <h4>¿Cuál es la finalidad dee hacer una prueba unitaria?</h4>
+      <input type="radio" name="opcion" value="o13" required="">Comprobar que el código funciona correctamente.<br>
+      <input type="radio" name="opcion" value="o14" required="">Darle valores a los parámetros de dichas funciones.<br>
+      <input type="radio" name="opcion" value="o15" required="">No tiene ningún fin.<br><br>
+      </div>
+      <div>
+    <h4>¿Qué significa DOM?</h4>
+      <input type="radio" name="opcion" value="o16" required="">Dual Object Model.<br>
+      <input type="radio" name="opcion" value="o17" required="">Document Oject Model.<br>
+      <input type="radio" name="opcion" value="o18" required="">Document Obsolet Model.<br><br>
+      </div>
+      <input type="submit"  onclick="mostrarResultados();return false">
+</form>
+</div>
+<script src="asssets/js/main.js"type="text/javascript">
+</script>
 </body>
 </html>
